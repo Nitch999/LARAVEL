@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class PagesController extends Controller
 {
     //
-    public function home() {
+    public function home () {
         return view('welcome');
     }
 }
