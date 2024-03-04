@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-    </head>
-    <body >
-    <style>
-
-body {
+@section('contenu')
+<style>
+    body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
     }
@@ -66,39 +54,8 @@ body {
         color: #007bff;
         text-decoration: none;
     }
-    /* Style de base pour la barre de navigation */
-    nav {
-        background-color: #333;
-        overflow: hidden;
-    }
-
-    /* Style pour les liens de navigation */
-    nav a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
-
-    /* Style pour les liens de navigation au survol */
-    nav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-
 </style>
-</head>
-<body>
 
-
-<nav>
-    <a href="{{URL ::to('/')}}">HOME</a>
-    <a href="{{URL ::to('/sit')}}">À propos</a>
-    <a href="{{URL ::to('/frm')}}">Service</a>
-</nav>
 <div class="container">
     <h2>Inscription</h2>
     <form action="#" method="post">
@@ -115,8 +72,7 @@ body {
 
         <p class="terms">En cliquant sur "S'inscrire", vous acceptez nos <a href="#">conditions d'utilisation</a>.</p>
     </form>
+</div>
 
 <h1>MR.JACK DARE</h1>
-
-    </body>
-</html>
+@endsection
