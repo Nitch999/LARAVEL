@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PagesController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,12 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','PagesController@home' );
+//Route::get('/','PagesController@home' );
+Route::get('/', [PagesController::class, 'home']);
 
-Route::get('/sit', function () {
-    return view('jack');
-});
 
-Route::get('/frm', function () {
-    return view('dare');
-});
+Route::get('/sit',[PagesController::class, 'about'] );
+
+Route::get('/frm',[PagesController::class, 'conn'] );
