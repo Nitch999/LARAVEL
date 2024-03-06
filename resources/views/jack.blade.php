@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
+@section('titre')
+Fortune
+@endsection
+
+
 @section('contenu')
 
-<h1>MR.JACK est Multi miliardaire</h1>
+<h1>ON CONTINUE LA SAGA</h1>
 
 @endsection

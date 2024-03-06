@@ -1,16 +1,21 @@
 @extends('layouts.app')
 
+@section('titre')
+Connexion
+@endsection
+
+
 @section('contenu')
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background-color: #f4f4f41b;
     }
 
     .container {
         max-width: 400px;
         margin: 50px auto;
-        background: #fff;
+        background: #ffffff7d;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -26,7 +31,7 @@
         width: 100%;
         padding: 10px;
         margin: 5px 0;
-        border: 1px solid #ccc;
+        border: 1px solid #f77104ac;
         border-radius: 5px;
         box-sizing: border-box;
     }
