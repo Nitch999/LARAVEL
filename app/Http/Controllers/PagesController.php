@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Product;
 
 
 class PagesController extends Controller
@@ -12,9 +14,12 @@ class PagesController extends Controller
         return view('welcome');
     }
     public function about() {
-        return view('jack');
+        $produits = product::get();
+        return view('jack')->with('produits', $produits);
     }
+
     public function conn () {
+
         return view('dare');
     }
 }
